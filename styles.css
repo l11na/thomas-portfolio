@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .section {
+    height: 100%;
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  
