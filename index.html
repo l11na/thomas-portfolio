@@ -1,82 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title thing</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> 
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>title thing</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> 
+  <script src="script.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="menu">
-            <nav>
-                <ul>
-                  <li><button class="menu-button">Home</button></li>
-                  <li><button class="menu-button">Portfolio</button></li>
-                  <li><button class="menu-button">Services</button></li>
-                  <li><button class="menu-button">Contact</button></li>
-                </ul>
-              </nav>
+  <div class="header">
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><button class="menu-button" data-section="home">Home</button></li>
+          <li><button class="menu-button" data-section="portfolio">Portfolio</button></li>
+          <li><button class="menu-button" data-section="services">Services</button></li>
+          <li><button class="menu-button" data-section="contact">Contact</button></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="home" class="section">
+    <div class="mid">
+      <div class="logo">
+        <img src="img/logo.png">
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/your-profile" target="_blank">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://twitter.com/your-profile" target="_blank">
+          <img src="img/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://github.com/your-profile" target="_blank">
+          <img src="img/github.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="section">
+    <div class="side-menu">
+      <ul>
+        <li><button class="menu-button" data-section="project1">Project 1</button></li>
+        <li><button class="menu-button" data-section="project2">Project 2</button></li>
+        <li><button class="menu-button" data-section="project3">Project 3</button></li>
+        <li><button class="menu-button" data-section="project4">Project 4</button></li>
+        <li><button class="menu-button" data-section="project5">Project 5</button></li>
+      </ul>
+    </div>
+    <div class="projects-container">
+      <div id="project1" class="project-section">
+        <h2>Project 1</h2>
+        <div class="project-content">
+          <div class="project-image">
+            <img src="img/project1-image1.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image1.jpg">
+              <p>Image 1</p>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image2.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image2.jpg">
+              <p>Image 2</p>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image3.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image3.jpg">
+              <p>Image 3</p>
+            </div>
+          </div>
         </div>
-    </div>
-
-    <div id="home" class="section">
-
-        <div class="mid">
-            <div class="logo">
-                <img src="img/logo.png">
+      </div>
+      <div id="project2" class="project-section">
+        <h2>Project 2</h2>
+        <div class="project-content">
+          <div class="project-image">
+            <img src="img/project1-image1.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image1.jpg">
+              <p>Image 1</p>
             </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/your-profile" target="_blank">
-                  <img src="img/linkedin.png" alt="LinkedIn">
-                </a>
-                <a href="https://twitter.com/your-profile" target="_blank">
-                  <img src="img/twitter.png" alt="Twitter">
-                </a>
-                <a href="https://github.com/your-profile" target="_blank">
-                  <img src="img/github.png" alt="GitHub">
-                </a>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image2.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image2.jpg">
+              <p>Image 2</p>
             </div>
-              
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image3.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image3.jpg">
+              <p>Image 3</p>
+            </div>
+          </div>
         </div>
-
-    </div>
-
-    <div id="portfolio" class="section">
-        aaaaaa
-    </div>
-
-    <div id="services" class="section">
-        bbbbbbb
-    </div>
-
-    <div id="contact" class="section">
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                <label for="Name" class="fcf-label">Your name</label>
-                <div class="fcf-input-group">
-                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                </div>
-            <div class="fcf-form-group">
-                <label for="Email" class="fcf-label">Your email address</label>
-                <div class="fcf-input-group">
-                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                </div>
+      </div>
+      <div id="project3" class="project-section">
+        <h2>Project 3</h2>
+        <div class="project-content">
+          <div class="project-image">
+            <img src="img/project1-image1.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image1.jpg">
+              <p>Image 1</p>
             </div>
-            <div class="fcf-form-group">
-                <label for="Message" class="fcf-label">Your message</label>
-                <div class="fcf-input-group">
-                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                </div>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image2.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image2.jpg">
+              <p>Image 2</p>
             </div>
-            <div class="fcf-form-group">
-                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image3.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image3.jpg">
+              <p>Image 3</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div id="project4" class="project-section">
+        <h2>Project 4</h2>
+        <div class="project-content">
+          <div class="project-image">
+            <img src="img/project1-image1.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image1.jpg">
+              <p>Image 1</p>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image2.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image2.jpg">
+              <p>Image 2</p>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image3.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image3.jpg">
+              <p>Image 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="project5" class="project-section">
+        <h2>Project 5</h2>
+        <div class="project-content">
+          <div class="project-image">
+            <img src="img/project1-image1.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image1.jpg">
+              <p>Image 1</p>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image2.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image2.jpg">
+              <p>Image 2</p>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="img/project1-image3.jpg">
+            <div class="image-popup">
+              <img src="img/project1-image3.jpg">
+              <p>Image 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  
+  <div id="services" class="section">
+    <!-- Content for Services section -->
+  </div>
 
-    <script>
-        initNavigation(); // Call the function to initialize navigation
-    </script>
+  <div id="contact" class="section">
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+      <label for="Name" class="fcf-label">Your name</label>
+      <div class="fcf-input-group">
+        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+      </div>
+      <div class="fcf-form-group">
+        <label for="Email" class="fcf-label">Your email address</label>
+        <div class="fcf-input-group">
+          <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+        </div>
+      </div>
+      <div class="fcf-form-group">
+        <label for="Message" class="fcf-label">Your message</label>
+        <div class="fcf-input-group">
+          <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+        </div>
+      </div>
+      <div class="fcf-form-group">
+        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+      </div>
+    </form>
+  </div>
+
 </body>
 </html>
