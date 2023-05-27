@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>title thing</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"> 
-  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
   <div class="header">
     <div class="menu">
@@ -42,17 +43,20 @@
   </div>
 
   <div id="portfolio" class="section">
-    <div class="side-menu">
-      <ul>
-        <li><button class="menu-button" data-section="project1">Project 1</button></li>
-        <li><button class="menu-button" data-section="project2">Project 2</button></li>
-        <li><button class="menu-button" data-section="project3">Project 3</button></li>
-        <li><button class="menu-button" data-section="project4">Project 4</button></li>
-        <li><button class="menu-button" data-section="project5">Project 5</button></li>
-      </ul>
-    </div>
+    <h2>Projects</h2>
+    <div id="side-menu" class="side-menu">
+        <ul>
+          <li><button class="filter-button" data-filter="all">All Projects</button></li>
+          <li><button class="filter-button" data-filter="project1">Project 1</button></li>
+          <li><button class="filter-button" data-filter="project2">Project 2</button></li>
+          <li><button class="filter-button" data-filter="project3">Project 3</button></li>
+          <li><button class="filter-button" data-filter="project4">Project 4</button></li>
+          <li><button class="filter-button" data-filter="project5">Project 5</button></li>
+        </ul>
+      </div>
+          
     <div class="projects-container">
-      <div id="project1" class="project-section">
+      <div id="project1" class="section project-section" data-filter="project1">
         <h2>Project 1</h2>
         <div class="project-content">
           <div class="project-image">
@@ -78,105 +82,105 @@
           </div>
         </div>
       </div>
-      <div id="project2" class="project-section">
+      <div id="project2" class="section project-section" data-filter="project2">
         <h2>Project 2</h2>
         <div class="project-content">
           <div class="project-image">
-            <img src="img/project1-image1.jpg">
+            <img src="img/project2-image1.jpg">
             <div class="image-popup">
-              <img src="img/project1-image1.jpg">
+              <img src="img/project2-image1.jpg">
               <p>Image 1</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image2.jpg">
+            <img src="img/project2-image2.jpg">
             <div class="image-popup">
-              <img src="img/project1-image2.jpg">
+              <img src="img/project2-image2.jpg">
               <p>Image 2</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image3.jpg">
+            <img src="img/project2-image3.jpg">
             <div class="image-popup">
-              <img src="img/project1-image3.jpg">
+              <img src="img/project2-image3.jpg">
               <p>Image 3</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="project3" class="project-section">
+      <div id="project3" class="section project-section" data-filter="project3">
         <h2>Project 3</h2>
         <div class="project-content">
           <div class="project-image">
-            <img src="img/project1-image1.jpg">
+            <img src="img/project3-image1.jpg">
             <div class="image-popup">
-              <img src="img/project1-image1.jpg">
+              <img src="img/project3-image1.jpg">
               <p>Image 1</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image2.jpg">
+            <img src="img/project3-image2.jpg">
             <div class="image-popup">
-              <img src="img/project1-image2.jpg">
+              <img src="img/project3-image2.jpg">
               <p>Image 2</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image3.jpg">
+            <img src="img/project3-image3.jpg">
             <div class="image-popup">
-              <img src="img/project1-image3.jpg">
+              <img src="img/project3-image3.jpg">
               <p>Image 3</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="project4" class="project-section">
+      <div id="project4" class="section project-section" data-filter="project4">
         <h2>Project 4</h2>
         <div class="project-content">
           <div class="project-image">
-            <img src="img/project1-image1.jpg">
+            <img src="img/project4-image1.jpg">
             <div class="image-popup">
-              <img src="img/project1-image1.jpg">
+              <img src="img/project4-image1.jpg">
               <p>Image 1</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image2.jpg">
+            <img src="img/project4-image2.jpg">
             <div class="image-popup">
-              <img src="img/project1-image2.jpg">
+              <img src="img/project4-image2.jpg">
               <p>Image 2</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image3.jpg">
+            <img src="img/project4-image3.jpg">
             <div class="image-popup">
-              <img src="img/project1-image3.jpg">
+              <img src="img/project4-image3.jpg">
               <p>Image 3</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="project5" class="project-section">
+      <div id="project5" class="section project-section" data-filter="project5">
         <h2>Project 5</h2>
         <div class="project-content">
           <div class="project-image">
-            <img src="img/project1-image1.jpg">
+            <img src="img/project5-image1.jpg">
             <div class="image-popup">
-              <img src="img/project1-image1.jpg">
+              <img src="img/project5-image1.jpg">
               <p>Image 1</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image2.jpg">
+            <img src="img/project5-image2.jpg">
             <div class="image-popup">
-              <img src="img/project1-image2.jpg">
+              <img src="img/project5-image2.jpg">
               <p>Image 2</p>
             </div>
           </div>
           <div class="project-image">
-            <img src="img/project1-image3.jpg">
+            <img src="img/project5-image3.jpg">
             <div class="image-popup">
-              <img src="img/project1-image3.jpg">
+              <img src="img/project5-image3.jpg">
               <p>Image 3</p>
             </div>
           </div>
@@ -184,9 +188,15 @@
       </div>
     </div>
   </div>
-  
+
   <div id="services" class="section">
-    <!-- Content for Services section -->
+    <h2>Services</h2>
+    <p>Here are some of the services we offer:</p>
+    <ul>
+      <li>Service 1</li>
+      <li>Service 2</li>
+      <li>Service 3</li>
+    </ul>
   </div>
 
   <div id="contact" class="section">
@@ -213,5 +223,6 @@
     </form>
   </div>
 
+<script src="script.js"></script>
 </body>
 </html>

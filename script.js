@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 function initNavigation() {
   const sections = document.getElementsByClassName('section');
   const mainMenuButtons = document.getElementsByClassName('menu-button');
-  const sideMenuButtons = document.querySelectorAll('#portfolio .menu-button[data-section^="project"]');
+  const sideMenuButtons = document.querySelectorAll('#side-menu .menu-button');
+  const filterButtons = document.querySelectorAll('.filter-button');
   let currentSectionIndex = 0;
 
   // Display the initial section
@@ -29,13 +30,51 @@ function initNavigation() {
     });
   }
 
+  // Filter button click handling
+  for (let i = 0; i < filterButtons.length; i++) {
+    filterButtons[i].addEventListener('click', () => {
+      const filter = filterButtons[i].dataset.filter;
+      filterProjects(filter);
+    });
+  }
+
   function navigateToSection(index) {
     if (index < 0 || index >= sections.length) {
       return;
     }
 
-    sections[currentSectionIndex].classList.remove('active');
-    currentSectionIndex = index;
-    sections[currentSectionIndex].classList.add('active');
+    // Hide all sections
+    for (let i = 0; i < sections.length; i++) {
+      sections[i].classList.remove('active');
+    }
+
+    // Show the selected section
+    sections[index].classList.add('active');
+
+    // Check if the selected section is a project section
+    const selectedSection = sections[index];
+    const isProjectSection = selectedSection.classList.contains('project-section');
+
+    // Toggle the visibility of the side menu based on the section type
+    const sideMenu = document.getElementById('side-menu');
+    if (isProjectSection) {
+      sideMenu.classList.add('visible');
+    } else {
+      sideMenu.classList.remove('visible');
+    }
+  }
+
+  function filterProjects(filter) {
+    // Hide all project sections
+    const projectSections = document.getElementsByClassName('project-section');
+    for (let i = 0; i < projectSections.length; i++) {
+      projectSections[i].style.display = 'none';
+    }
+
+    // Show the project sections matching the filter
+    const filteredProjectSections = document.querySelectorAll(`[data-filter="${filter}"]`);
+    for (let i = 0; i < filteredProjectSections.length; i++) {
+      filteredProjectSections[i].style.display = 'block';
+    }
   }
 }
